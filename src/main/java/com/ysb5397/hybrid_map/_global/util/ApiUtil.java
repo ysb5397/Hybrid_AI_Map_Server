@@ -1,10 +1,12 @@
 package com.ysb5397.hybrid_map._global.util;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class ApiUtil<T> {
 
     private int statusCode;

@@ -1,0 +1,11 @@
+### 1. 유저 회원가입
+POST http://localhost:8080/api/users/signup?type=Main
+
+{
+    "email": "a@a.com",
+    "username": "test",
+    "password": "test123",
+    "repeatPassword": "test123",
+    "userGender": "Male",
+    "age": 22
+}

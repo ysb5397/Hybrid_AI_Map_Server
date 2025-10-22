@@ -28,3 +28,13 @@ spring:
         default_batch_fetch_size: 10
 
     defer-datasource-initialization: true
+
+jwt:
+  secret: 'a0Z0aEFtTklTNEtSVHlYcUNzN3JvN2N3enVqME1teXIyKzFLcHpVdldhQjZONk52VjJjYlZLUHlKWW53bw=='
+  expiration-in-ms: 3600000 # 1시간
+
+login:
+  # naver: ""
+  kakao:
+    key: "nJyO29a2pfOmnU9TFMRF55Fnf06MREdT"
+    redirect-uri: "http://localhost:8080/api/users/login/kakao/auth"

@@ -41,6 +41,17 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
 	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
+
+	implementation 'org.springframework.security:spring-security-crypto'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	// --- JWT 라이브러리 (최신 모듈 방식) ---
+	// 1. jjwt-api: Jwts, Claims 등 핵심 API
+	implementation 'io.jsonwebtoken:jjwt-api:0.12.5'
+	// 2. jjwt-impl: 실제 구현체
+	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.5'
+	// 3. jjwt-jackson: JSON 파서
+	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.5'
 }
 
 dependencyManagement {

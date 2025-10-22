@@ -1,5 +1,6 @@
-package com.ysb5397.hybrid_map.user;
+package com.ysb5397.hybrid_map.domain.user.dto;
 
+import com.ysb5397.hybrid_map.domain.user.UserGender;
 import lombok.Data;
 
 public class UserRequest {
@@ -12,6 +13,11 @@ public class UserRequest {
         private String repeatPassword;
         private UserGender userGender;
         private Long age;
-        private String imageUrl;
+    }
+
+    @Data
+    public static class LoginDTO {
+        private String email;
+        private String password;
     }
 }

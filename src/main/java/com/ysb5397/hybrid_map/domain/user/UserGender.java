@@ -1,4 +1,4 @@
-package com.ysb5397.hybrid_map.user;
+package com.ysb5397.hybrid_map.domain.user;
 
 public enum UserGender {
     MALE,
